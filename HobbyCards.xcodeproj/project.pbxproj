@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E992CC742D11C61900C387C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E992CC6E2D11C61900C387C0 /* Preview Assets.xcassets */; };
+		E992CC752D11C61900C387C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E992CC702D11C61900C387C0 /* Assets.xcassets */; };
+		E992CC762D11C61900C387C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC712D11C61900C387C0 /* ContentView.swift */; };
+		E992CC772D11C61900C387C0 /* HobbyCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC722D11C61900C387C0 /* HobbyCardsApp.swift */; };
+		E992CC7B2D11C67E00C387C0 /* XShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC7A2D11C67E00C387C0 /* XShape.swift */; };
+		E992CC7D2D11C77600C387C0 /* PlayerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC7C2D11C77600C387C0 /* PlayerTabView.swift */; };
+		E992CC7F2D11C78600C387C0 /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC7E2D11C78600C387C0 /* PlayerCardView.swift */; };
+		E992CC822D11C81E00C387C0 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC812D11C81E00C387C0 /* Player.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E992CC5D2D11C61000C387C0 /* HobbyCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E992CC6E2D11C61900C387C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E992CC702D11C61900C387C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E992CC712D11C61900C387C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E992CC722D11C61900C387C0 /* HobbyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyCardsApp.swift; sourceTree = "<group>"; };
+		E992CC7A2D11C67E00C387C0 /* XShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XShape.swift; sourceTree = "<group>"; };
+		E992CC7C2D11C77600C387C0 /* PlayerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTabView.swift; sourceTree = "<group>"; };
+		E992CC7E2D11C78600C387C0 /* PlayerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
+		E992CC812D11C81E00C387C0 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		E992CC5F2D11C61000C387C0 /* HobbyCards */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HobbyCards;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E992CC5A2D11C61000C387C0 /* Frameworks */ = {
@@ -32,7 +43,7 @@
 		E992CC542D11C61000C387C0 = {
 			isa = PBXGroup;
 			children = (
-				E992CC5F2D11C61000C387C0 /* HobbyCards */,
+				E992CC732D11C61900C387C0 /* HobbyCards */,
 				E992CC5E2D11C61000C387C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,53 @@
 				E992CC5D2D11C61000C387C0 /* HobbyCards.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E992CC6F2D11C61900C387C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E992CC6E2D11C61900C387C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E992CC732D11C61900C387C0 /* HobbyCards */ = {
+			isa = PBXGroup;
+			children = (
+				E992CC722D11C61900C387C0 /* HobbyCardsApp.swift */,
+				E992CC792D11C62F00C387C0 /* Shape */,
+				E992CC802D11C80700C387C0 /* Model */,
+				E992CC782D11C62400C387C0 /* Views */,
+				E992CC6F2D11C61900C387C0 /* Preview Content */,
+				E992CC702D11C61900C387C0 /* Assets.xcassets */,
+			);
+			path = HobbyCards;
+			sourceTree = "<group>";
+		};
+		E992CC782D11C62400C387C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E992CC712D11C61900C387C0 /* ContentView.swift */,
+				E992CC7C2D11C77600C387C0 /* PlayerTabView.swift */,
+				E992CC7E2D11C78600C387C0 /* PlayerCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E992CC792D11C62F00C387C0 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				E992CC7A2D11C67E00C387C0 /* XShape.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		E992CC802D11C80700C387C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E992CC812D11C81E00C387C0 /* Player.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +117,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				E992CC5F2D11C61000C387C0 /* HobbyCards */,
 			);
 			name = HobbyCards;
 			packageProductDependencies = (
@@ -109,6 +164,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E992CC742D11C61900C387C0 /* Preview Assets.xcassets in Resources */,
+				E992CC752D11C61900C387C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E992CC762D11C61900C387C0 /* ContentView.swift in Sources */,
+				E992CC7D2D11C77600C387C0 /* PlayerTabView.swift in Sources */,
+				E992CC7B2D11C67E00C387C0 /* XShape.swift in Sources */,
+				E992CC772D11C61900C387C0 /* HobbyCardsApp.swift in Sources */,
+				E992CC822D11C81E00C387C0 /* Player.swift in Sources */,
+				E992CC7F2D11C78600C387C0 /* PlayerCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
