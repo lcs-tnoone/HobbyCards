@@ -17,9 +17,8 @@ struct PlayerCardView: View {
                 Image(chosenPlayer.playerImage)
                     .resizable()
                     .scaledToFit()
-                //                    .frame(width: 350, height: 233)
                     .background(Color.white)
-                    .border(Color.black, width: 3)
+                    .border(Color.white, width: 3)
                     .clipped()
                     .padding(40)
                     .overlay(alignment: .topLeading) {
@@ -27,7 +26,7 @@ struct PlayerCardView: View {
                             XShape()
                                 .fill(Color.red)
                             XShape()
-                                .stroke(Color.black, lineWidth: 5)
+                                .stroke(Color.white, lineWidth: 5)
                             Image(systemName: "globe")
                                 .resizable()
                                 .scaledToFit()
@@ -35,68 +34,103 @@ struct PlayerCardView: View {
                                 .foregroundColor(.black)
                         }
                         .frame(width: 100, height: 100)
-                        //                        .offset(x: -25, y: -25)
+                        .padding(5)
                     }
-                    .border(.red)
                 Text(chosenPlayer.name)
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .padding(.bottom, 10)
                     .frame(maxWidth: .infinity, alignment: .center)
                     .offset(y: -30)
                 PodiumShape()
                     .fill(
                         LinearGradient(
-                            gradient: Gradient(colors: [.red, .black]),
-                            startPoint: .top,
-                            endPoint: .bottom
+                            gradient: Gradient(colors: [.white, .yellow,.white]),
+                            startPoint: .leading,
+                            endPoint: .trailing
                         )
                     )
+                    .stroke(Color.white, lineWidth: 5)
                     .frame(height: 200)
     //                .scaleEffect(x: 1, y: 0.4)
                     .overlay {
                         ZStack {
                             // Top XShape
                             VStack {
-                                XShape()
-                                    .fill(Color.yellow)
+                                ZStack {
+                                    XShape()
+                                        .fill(Color.yellow)
+                                    XShape()
+                                        .stroke(Color.black, lineWidth: 5)
+                                    Image(systemName: "globe")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 30, height: 30)
+                                        .foregroundColor(.black)
+                                }
                                     .frame(width: 80, height: 80)
                                 Text("\(chosenPlayer.goldMedals)")
                                     .font(.caption)
-                                    .foregroundColor(.yellow)
+                                    .foregroundColor(.black)
                             }
                             .offset(y: -20)
                             
                             // Bottom-left XShape
                             VStack {
-                                XShape()
-                                    .fill(Color.gray)
+                                ZStack {
+                                    XShape()
+                                        .fill(Color.gray)
+                                    XShape()
+                                        .stroke(Color.black, lineWidth: 5)
+                                    Image(systemName: "globe")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 20, height: 20)
+                                        .foregroundColor(.black)
+                                }
                                     .frame(width: 60, height: 60)
                                 Text("\(chosenPlayer.silverMedals)")
                                     .font(.caption)
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(.black)
                             }
-                            .offset(x: -50, y: 40)
+                            .offset(x: -60, y: 40)
                             
                             // Bottom-right XShape
                             VStack {
-                                XShape()
-                                    .fill(Color.brown)
+                                ZStack {
+                                    XShape()
+                                        .fill(Color.brown)
+                                    XShape()
+                                        .stroke(Color.black, lineWidth: 5)
+                                    Image(systemName: "globe")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 20, height: 20)
+                                        .foregroundColor(.black)
+                                }
                                     .frame(width: 60, height: 60)
                                 Text("\(chosenPlayer.bronzeMedals)")
                                     .font(.caption)
-                                    .foregroundColor(.brown)
+                                    .foregroundColor(.black)
                             }
-                            .offset(x: 50, y: 40)
+                            .offset(x: 60, y: 40)
                         }
                     }
+                Spacer(minLength: 20)
+                Text("About \(chosenPlayer.name)")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.bottom, 10)
+                    .frame(maxWidth: .infinity, alignment: .center)
                 Text(chosenPlayer.description)
-                    .padding(5)
-                
-                Spacer()
+                    .foregroundColor(.white)
+                .padding(5)
+
             }
         }
+        .background(Color.black)
     }
 }
 
