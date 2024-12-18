@@ -14,6 +14,7 @@
 		E992CC7D2D11C77600C387C0 /* PlayerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC7C2D11C77600C387C0 /* PlayerTabView.swift */; };
 		E992CC7F2D11C78600C387C0 /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC7E2D11C78600C387C0 /* PlayerCardView.swift */; };
 		E992CC822D11C81E00C387C0 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC812D11C81E00C387C0 /* Player.swift */; };
+		E992CC842D13395F00C387C0 /* PodiumShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992CC832D13395F00C387C0 /* PodiumShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E992CC7C2D11C77600C387C0 /* PlayerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTabView.swift; sourceTree = "<group>"; };
 		E992CC7E2D11C78600C387C0 /* PlayerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
 		E992CC812D11C81E00C387C0 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E992CC832D13395F00C387C0 /* PodiumShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodiumShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E992CC7A2D11C67E00C387C0 /* XShape.swift */,
+				E992CC832D13395F00C387C0 /* PodiumShape.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				E992CC772D11C61900C387C0 /* HobbyCardsApp.swift in Sources */,
 				E992CC822D11C81E00C387C0 /* Player.swift in Sources */,
 				E992CC7F2D11C78600C387C0 /* PlayerCardView.swift in Sources */,
+				E992CC842D13395F00C387C0 /* PodiumShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
