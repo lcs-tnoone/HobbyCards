@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct PlayerTabView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            ForEach(Snowboarders) {currentPlayer in PlayerCardView(chosenPlayer: currentPlayer)
+            }
+        }
+        .ignoresSafeArea()
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .persistentSystemOverlays(.hidden)
     }
 }
 
