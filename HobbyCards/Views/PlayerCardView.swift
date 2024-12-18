@@ -12,35 +12,37 @@ struct PlayerCardView: View {
     let chosenPlayer: Player
     
     var body: some View {
-        VStack{
-            ZStack{
+        VStack(alignment: .leading, spacing: 10) {
+            ZStack(alignment: .topLeading) {
                 Image(chosenPlayer.playerImage)
                     .resizable()
                     .scaledToFit()
+                    .frame(width: 350, height: 233)
+                    .background(Color.white)
+                    .border(Color.black, width: 3)
+                    .clipped()
+                
                 ZStack {
                     XShape()
-                        .fill(Color.red) // Fill the inside of the X with red
+                        .fill(Color.red)
                     XShape()
-                        .stroke(Color.black, lineWidth: 20) // Add a black border to the X
+                        .stroke(Color.black, lineWidth: 5)
                     Image(systemName: "globe")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 50, height: 50) // Adjust the size of the globe
-                        .foregroundColor(.black) // Make the globe black
+                        .frame(width: 40, height: 40)
+                        .foregroundColor(.black)
                 }
-                .frame(width: 200, height: 200) // Set the overall size of the shape
-            
-
+                .frame(width: 100, height: 100)
+                .offset(x: -25, y: -25)
             }
+            Spacer()
         }
     }
-    
 }
 
-
 #Preview {
-    NavigationStack{
+    NavigationStack {
         PlayerCardView(chosenPlayer: DustyHenrickson)
     }
 }
-
