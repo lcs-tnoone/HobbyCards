@@ -53,7 +53,6 @@ struct PlayerCardView: View {
                     )
                     .stroke(Color.white, lineWidth: 5)
                     .frame(height: 200)
-    //                .scaleEffect(x: 1, y: 0.4)
                     .overlay {
                         ZStack {
                             // Top XShape
