@@ -36,6 +36,24 @@ struct PlayerCardView: View {
                     .frame(width: 100, height: 100)
 //                        .offset(x: -25, y: -25)
                 }
+            PodiumShape()
+                .fill(LinearGradient(gradient: Gradient(colors: [.red,.black]), startPoint: .top, endPoint: .bottom))
+                .scaleEffect(x: 1, y: 0.4)
+                .offset(y: -150)
+                .overlay(alignment: .top, content: {
+                    ZStack {
+                        XShape()
+                            .fill(Color.yellow)
+                        XShape()
+                            .stroke(Color.black, lineWidth: 5)
+                        Image(systemName: "globe")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 40, height: 40)
+                            .foregroundColor(.black)
+                    }
+                    .frame(width: 100, height: 100)
+                })
                 .padding(5)
             Spacer()
         }
